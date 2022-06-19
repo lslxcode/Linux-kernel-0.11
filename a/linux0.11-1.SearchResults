@@ -1,0 +1,7 @@
+---- sleep_on Matches (6 in 3 files) ----
+buffer.c (F:\资料\linux\kernel\linux0.11-1-master\fs) line 50 : 		sleep_on(&bh->b_wait);
+buffer.c (F:\资料\linux\kernel\linux0.11-1-master\fs) line 264 : 		sleep_on(&buffer_wait);
+inode.c (F:\资料\linux\kernel\linux0.11-1-master\fs) line 28 : 		sleep_on(&inode->i_wait);
+inode.c (F:\资料\linux\kernel\linux0.11-1-master\fs) line 39 : 		sleep_on(&inode->i_wait);
+ll_rw_blk.c (F:\资料\linux\kernel\linux0.11-1-master\kernel\blk_drv) line 63 : 		sleep_on (&bh->b_wait);
+ll_rw_blk.c (F:\资料\linux\kernel\linux0.11-1-master\kernel\blk_drv) line 175 : 		sleep_on (&wait_for_request);	// 否则让本次请求睡眠，过会再查看请求队列。
